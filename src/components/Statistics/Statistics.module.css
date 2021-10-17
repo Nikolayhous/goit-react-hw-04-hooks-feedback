@@ -1,0 +1,25 @@
+.statistics {
+    margin-top: 45px;
+    padding-left: 200px;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 1.21;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.list {
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.item {
+    font-size: 22px;
+    line-height: 1.21;
+}
+
+.item:not(:first-child) {
+    margin-top: 8px;
+}
