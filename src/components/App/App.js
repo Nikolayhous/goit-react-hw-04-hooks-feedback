@@ -9,7 +9,7 @@ function App() {
     const [neutral, setNeutral] = useState(0);
     const [bad, setBad] = useState(0);
 
-    const addLeaveFeedback = option => {
+    const onLeaveFeedback = option => {
         switch (option) {
             case 'good':
                 setGood(prevGood => prevGood + 1);
@@ -39,7 +39,7 @@ function App() {
             <Section title={'Please leave feedback'}>
                 <FeedbackOptions
                     options={['good', 'neutral', 'bad']}
-                    onLeaveFeedback={addLeaveFeedback}
+                    onLeaveFeedback={onLeaveFeedback}
                 />
             </Section>
             <Section title={'Statistical'}>
